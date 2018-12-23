@@ -82,12 +82,16 @@ let chronometer = {
 
 startButton.onclick = () => {
 	chronometer.init();
+	startButton.disabled = true;
+
 }
 
 stopButton.onclick = () => {
 	chronometer.stop();
+	startButton.disabled = false;
 }
 
 resetButton.onclick = () => {
 	chronometer.resume();
+	startButton.disabled = false;
 }
