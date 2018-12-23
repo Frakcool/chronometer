@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Javascript Chronometer</title>
+	<link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<section id="container">
+		<div id="chronometer">
+			<div id="chronometer-body">
+				<div id="chronometer-brand">
+					@jupitense
+				</div>
+				<div id="chronometer-screen">
+					<div id="tags">
+						<span class="tag">H</span>
+						<span class="tag">M</span>
+						<span class="tag">S</span>
+						<span class="tag">h</span>
+					</div>
+					<div>
+						<strong id="hours">00</strong>
+						<span>:</span>
+						<strong id="minutes">00</strong>
+						<span>:</span>
+						<strong id="seconds">00</strong>
+						<span>:</span>
+						<strong id="hundredths">00</strong>
+					</div>
+				</div>
+				<div id="controls">
+					<input type="button" id="stop" class="button stop-button" value="Stop">
+					<input type="button" id="start" class="button start-button" value="Start">
+					<input type="button" id="reset" class="button reset-button" value="Reset">
+				</div>
+				<div id="github-link">
+					<a href="https://github.com/Jupitense/chronometer" class="link">View on GitHub</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<script src="app.js"></script>
+	<!-- https://github.com/Jupitense/chronometer.git -->
+</body>
+</html>

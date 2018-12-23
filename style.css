@@ -1,0 +1,105 @@
+body { margin: 0 }
+
+#container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	background: #00bcd4;
+}
+
+#chronometer {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 350px;
+	height: 350px;
+	background: #222;
+	border-radius: 50%;
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,.22);
+}
+
+#chronometer-body {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	background: #424242;
+	width: 315px;
+	height: 315px;
+	border-radius: 50%;
+}
+
+#chronometer-brand,
+#github-link {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 2em;
+	font-family: helvetica;
+	color: #fff;
+	text-align: center;
+	background: #212121;
+	border-radius: 50px;
+}
+
+#chronometer-brand{ width: 8rem }
+#github-link { width: 7rem }
+
+.link {
+	text-decoration: none;
+	color: #fff;
+	font-size: 0.8em;
+}
+
+#chronometer-screen {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 80%;
+	height: 5em;
+	background: #18ffff;
+	border: solid 2px #ffd54f;
+	border-radius: 10px;
+}
+
+#tags {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	width: 90%;
+}
+
+.tag { font-size: 1.5em }
+
+strong,
+span {
+	font-family: 'VT323', monospace; 
+	font-size: 2.5em;
+}
+
+#controls {
+	display: flex;
+	flex-direction: row;
+}
+
+.button {
+ 	padding: 0.5rem;
+ 	margin-left: 0.5em;
+ 	color: #eee;
+ 	font-size: 1.2em;
+ 	border-width: 0;
+ 	border-radius: 2px;
+ 	transition: background .3s;
+ 	cursor: pointer;
+}
+
+.stop-button { background: #f44336 }
+.start-button { background: #4caf50 }
+.reset-button { background: #ff8f00 }
+
+.stop-button:hover { background: #d32f2f }
+.start-button:hover { background: #388e3c }
+.reset-button:hover { background: #ff6f00 }
